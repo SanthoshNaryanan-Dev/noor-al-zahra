@@ -1,0 +1,41 @@
+{
+  "name": "noor-al-zahra",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vue-tsc --noEmit && vite-ssg build && node scripts/postbuild.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "images": "node scripts/images.mjs",
+    "test:api": "node scripts/check-api.mjs"
+  },
+  "dependencies": {
+    "@fontsource/amiri": "5.2.6",
+    "@fontsource/cormorant-garamond": "5.2.7",
+    "@fontsource/dm-sans": "5.2.6",
+    "@unhead/vue": "2.0.14",
+    "pinia": "3.0.3",
+    "three": "0.187.0",
+    "vue": "3.5.46",
+    "vue-i18n": "11.4.22",
+    "vue-router": "4.5.1",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.1",
+    "@types/three": "0.187.0",
+    "@vitejs/plugin-vue": "5.2.4",
+    "eslint": "9.39.1",
+    "eslint-plugin-vue": "10.5.1",
+    "prettier": "3.6.2",
+    "sharp": "0.35.4",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.46.2",
+    "vite": "6.4.6",
+    "vite-ssg": "28.3.0",
+    "vue-tsc": "2.2.12"
+  }
+}
